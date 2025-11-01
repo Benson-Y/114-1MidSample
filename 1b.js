@@ -21,6 +21,7 @@
  *   輸出: ["mouse"]
  */
 function getLowStock(products) {
+  
  
 }
 

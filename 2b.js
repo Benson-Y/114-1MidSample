@@ -43,11 +43,20 @@ http.createServer((req, res) => {
   let fileOtherFile = '';
 
   // Switch根據不同路由要寫的部分
+switch(req.url) {
+
+    case '/':
+      filePath = '/index.ejs';
+      break;
+    case '/calculator':
+      filePath = '/index2.ejs';
+      break;
+}
 
 
-
-
-
+if (req.url.endsWith('.css')  ||  (req.url.endsWith('.js')) || (req.url.endsWith('.png'))) {
+    fileOtherFile = req.url;
+}
 
   
 
